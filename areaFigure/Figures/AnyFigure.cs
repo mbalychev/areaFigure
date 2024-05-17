@@ -39,4 +39,26 @@ public class AnyFigure : Figure
 
         throw new Exception("неудалось определить тип фигуры");
     }
+
+    /// <summary>
+    /// проверка евляетс ли прямоугольным
+    /// </summary>
+    /// <returns></returns> <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public bool IsRightAngled()
+    {
+        if (Triangle is not null)
+        {
+
+            double a = Math.Pow(Triangle.BaseLength, 2);
+            double b = Math.Pow(Triangle.Height, 2);
+            double c = Math.Pow(Triangle.Hypotenuse, 2);
+            return Math.Abs(a + b - c) < 0.0001;
+
+        }
+
+        throw new Exception("фигура не является треугольником");
+    }
 }

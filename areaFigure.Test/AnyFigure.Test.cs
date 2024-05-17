@@ -1,7 +1,7 @@
 namespace areaFigure.Test;
 
-//тестирование площади фигур
-public class Tests
+//тестирование площади фигуры
+public class TestsAnyFigure
 {
     [SetUp]
     public void Setup()
@@ -18,7 +18,7 @@ public class Tests
     {
         int radius = 5;
         // Arrange
-        Circle circle = new Circle(radius);
+        AnyFigure circle = new AnyFigure(radius);
 
         // Act
         double area = circle.CalculateArea();
@@ -35,7 +35,7 @@ public class Tests
     {
         double radius = 5.1;
         // Arrange
-        Circle circle = new Circle(radius);
+        AnyFigure circle = new AnyFigure(radius);
 
         // Act
         double area = circle.CalculateArea();
@@ -53,7 +53,7 @@ public class Tests
     public void Triangle_CalculateArea_WithInt()
     {
         // Arrange
-        Triangle triangle = new Triangle(4, 3, 5);
+        AnyFigure triangle = new AnyFigure(4, 3, 5);
 
         // Act
         double area = triangle.CalculateArea();
@@ -69,7 +69,7 @@ public class Tests
     public void Triangle_IsRightAngled()
     {
         // Arrange
-        Triangle triangle = new Triangle(3, 4, 5);
+        AnyFigure triangle = new AnyFigure(3, 4, 5);
 
         // Act
         bool isRightAngled = triangle.IsRightAngled();
@@ -86,7 +86,7 @@ public class Tests
     public void Triangle_IsNotRightAngled()
     {
         // Arrange
-        Triangle triangle = new Triangle(3, 4, 6);
+        AnyFigure triangle = new AnyFigure(3, 4, 6);
 
         // Act
         bool isRightAngled = triangle.IsRightAngled();
@@ -94,6 +94,5 @@ public class Tests
         // Assert
         Assert.IsFalse(isRightAngled);
     }
-
 
 }
