@@ -8,6 +8,11 @@ public class Tests
     {
     }
 
+    /// <summary>
+    /// тестирование с Itn радиусом
+    /// </summary> <summary>
+    /// 
+    /// </summary>
     [Test]
     public void Circle_CalculateArea_Int()
     {
@@ -22,6 +27,9 @@ public class Tests
         Assert.AreEqual(Math.PI * Math.Pow(radius, 2), area, 0.0001);
     }
 
+    /// <summary>
+    /// тестирование с использование double значение радиуса
+    /// </summary>
     [Test]
     public void Circle_CalculateArea_Double()
     {
@@ -36,8 +44,13 @@ public class Tests
         Assert.AreEqual(Math.PI * Math.Pow(radius, 2), area, 0.0001);
     }
 
+    /// <summary>
+    /// тестирование с Int переменными
+    /// </summary> <summary>
+    /// 
+    /// </summary>
     [Test]
-    public void Triangle_CalculateArea_WithBaseAndHeight_ReturnsCorrectArea()
+    public void Triangle_CalculateArea_WithInt()
     {
         // Arrange
         Triangle triangle = new Triangle(4, 3, 5);
@@ -49,8 +62,12 @@ public class Tests
         Assert.AreEqual(6, area, 0.0001);
     }
 
+\
+    /// <summary>
+    /// тестирование на прямоугольный тр
+    /// </summary>
     [Test]
-    public void Triangle_IsRightAngled_WithValidSides_ReturnsTrue()
+    public void Triangle_IsRightAngled()
     {
         // Arrange
         Triangle triangle = new Triangle(3, 4, 5);
@@ -62,8 +79,12 @@ public class Tests
         Assert.IsTrue(isRightAngled);
     }
 
+
+    /// <summary>
+    /// тестирование на НЕ прямоугольный тр
+    /// </summary>
     [Test]
-    public void Triangle_IsRightAngled_WithInvalidSides_ReturnsFalse()
+    public void Triangle_IsNotRightAngled()
     {
         // Arrange
         Triangle triangle = new Triangle(3, 4, 6);
@@ -74,4 +95,6 @@ public class Tests
         // Assert
         Assert.IsFalse(isRightAngled);
     }
+
+
 }

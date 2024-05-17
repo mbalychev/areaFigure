@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6BvydfLPeaFO6hc9ymwYCxYvDk37M/X4cd7+GiCgL11WFbW0NfYvDM63hay5jDk/XHHRgM1V9VPLqKH6WrpooQ==",
+  "dgSpecHash": "Apgnzot32a9tKzLa3KPCYMlfOkxvNjN4L0k0vATTJ2w8dycDltvKs9QuhbqiNMGyiUxb1V2r+pVMpyOhYrZodw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbaly\\Documents\\areaFigure\\areaFigure.Test\\areaFigure.Test.csproj",
+  "projectFilePath": "c:\\Users\\mbaly\\Documents\\areaFigure\\areaFigure.Test\\areaFigure.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbaly\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\mbaly\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
