@@ -1,0 +1,12 @@
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.AssemblyInfoInputs.cache
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.AssemblyInfo.cs
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.csproj.CoreCompileInputs.cache
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.sourcelink.json
+C:\Users\mbaly\Documents\areaFigure\areaFigure\bin\Debug\net8.0\areaFigure.deps.json
+C:\Users\mbaly\Documents\areaFigure\areaFigure\bin\Debug\net8.0\areaFigure.dll
+C:\Users\mbaly\Documents\areaFigure\areaFigure\bin\Debug\net8.0\areaFigure.pdb
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.dll
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\refint\areaFigure.dll
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\areaFigure.pdb
+C:\Users\mbaly\Documents\areaFigure\areaFigure\obj\Debug\net8.0\ref\areaFigure.dll
