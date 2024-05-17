@@ -3,27 +3,29 @@
 /// </summary>
 public class AnyFigure : Figure
 {
-    Object FigureObj { get; set; }
+    Circle? Circle { get; set; }
+    Triangle? Triangle { get; set; }
+
 
     /// <summary>
-    /// создание фигуры
+    /// констр для фигуры - круг
     /// </summary>
-    /// <param name="Figure">массив параметров, один параметр для радиуса фигуры</param>
-    public AnyFigure(double[] paramsFigure)
+    /// <param name="radius"></param>
+    public AnyFigure(double radius)
     {
-        switch (paramsFigure.Length)
-        {
-            case 1:
-                FigureObj = new Circle(paramsFigure[0]);
-                break;
-
-            case 3:
-                FigureObj = new Triangle(paramsFigure[0], paramsFigure[1], paramsFigure[2]);
-                break;
-
-            default: throw new Exception("неверное кол-во параметров или не удалось определить фигуру");
-        }
+        this.Circle = new Circle(radius);
     }
+
+
+    /// <summary>
+    /// констр для фигуры - круг
+    /// </summary>
+    /// <param name="radius"></param>
+    public AnyFigure(double baseLength, double height, double hypotenuse)
+    {
+        this.Triangle = new Triangle(baseLength, height, hypotenuse);
+    }
+
 
 
     /// <summary>
@@ -32,18 +34,9 @@ public class AnyFigure : Figure
     /// <returns></returns>
     public override double CalculateArea()
     {
-        switch (FigureObj)
-        {
-            case Circle circle:
-                return circle.CalculateArea();
+        if (Circle is not null) return Circle.CalculateArea();
+        if (Triangle is not null) return Triangle.CalculateArea();
 
-            case Triangle triangle:
-                return triangle.CalculateArea();
-
-            default:
-                throw new Exception("Неизвестная фигура");
-        }
-
-        return 0;
+        throw new Exception("неудалось определить тип фигуры");
     }
 }
