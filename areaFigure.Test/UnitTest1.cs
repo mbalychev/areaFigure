@@ -9,16 +9,31 @@ public class Tests
     }
 
     [Test]
-    public void Circle_CalculateArea_WithRadius_ReturnsCorrectArea()
+    public void Circle_CalculateArea_Int()
     {
+        int radius = 5;
         // Arrange
-        Circle circle = new Circle(5);
+        Circle circle = new Circle(radius);
 
         // Act
         double area = circle.CalculateArea();
 
         // Assert
-        Assert.AreEqual(Math.PI * 25, area, 0.0001);
+        Assert.AreEqual(Math.PI * Math.Pow(radius, 2), area, 0.0001);
+    }
+
+    [Test]
+    public void Circle_CalculateArea_Double()
+    {
+        double radius = 5.1;
+        // Arrange
+        Circle circle = new Circle(radius);
+
+        // Act
+        double area = circle.CalculateArea();
+
+        // Assert
+        Assert.AreEqual(Math.PI * Math.Pow(radius, 2), area, 0.0001);
     }
 
     [Test]
