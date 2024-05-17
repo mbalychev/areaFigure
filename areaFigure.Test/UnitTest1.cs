@@ -1,6 +1,6 @@
 namespace areaFigure.Test;
-// using FigureTest;
 
+//тестирование площади фигур
 public class Tests
 {
     [SetUp]
@@ -62,7 +62,6 @@ public class Tests
         Assert.AreEqual(6, area, 0.0001);
     }
 
-\
     /// <summary>
     /// тестирование на прямоугольный тр
     /// </summary>
